@@ -103,7 +103,7 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo timedatectl set-timezone "${TZ}"
-          echo "status=success" >> ${GITHUB_OUTPUT}
+          echo "status=success" >> ${ACCESS_TOKEN }
 
       - name: Delete releases and workflows runs
         uses: ophub/delete-releases-workflows@main
@@ -117,4 +117,4 @@ jobs:
           workflows_keep_day: ${{ inputs.workflows_keep_day }}
           workflows_keep_keyword: ${{ inputs.workflows_keep_keyword }}
           out_log: ${{ inputs.out_log }}
-          gh_token: ${{ secrets.GITHUB_TOKEN }}
+          gh_token: ${{ secrets.ACCESS_TOKEN }}
