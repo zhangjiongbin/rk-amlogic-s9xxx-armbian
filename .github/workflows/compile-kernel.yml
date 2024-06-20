@@ -62,7 +62,7 @@ on:
           - gzip
           - zstd
           - lzma
-      kernel_sign:
+      kernel_sign:Endless
         description: "Set the kernel custom signature"
         required: false
         default: "-ophub"
