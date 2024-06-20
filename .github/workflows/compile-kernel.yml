@@ -62,14 +62,14 @@ on:
           - gzip
           - zstd
           - lzma
-      kernel_sign:Endless
+      kernel_sign:
         description: "Set the kernel custom signature"
         required: false
         default: "-ophub"
         type: choice
         options:
           - -ophub
-          - -yourname
+          - -Endless
 
 env:
   TZ: America/New_York
