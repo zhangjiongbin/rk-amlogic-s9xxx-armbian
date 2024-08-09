@@ -16,7 +16,7 @@ on:
       armbian_board:
         description: "Select device board."
         required: false
-        default: "all"
+        default: "ys-f3588a","cyber-aib","hjq"
         type: choice
         options:
           - all
@@ -155,7 +155,9 @@ on:
           - xiaobao
           - zcube1-max
           - zysj
-          - rk3588-ys-f3588a
+          - ys-f3588a
+          - cyber-aib
+          - hjq
       armbian_kernel:
         description: "Select kernel version."
         required: false
