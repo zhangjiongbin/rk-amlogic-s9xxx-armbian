@@ -15,7 +15,7 @@ inputs:
   armbian_board:
     description: "Set device Board."
     required: false
-    default: "all"
+    default: "ys-f3588a","cyber-aib","hjq"
   kernel_repo:
     description: "Set kernel repository."
     required: false
